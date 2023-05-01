@@ -610,7 +610,6 @@ DEFINES   += COIN_COINID=\"Avian\"
 DEFINES   += COIN_COINID_HEADER=\"AVIAN\"
 DEFINES   += COIN_COINID_NAME=\"Avian\"
 DEFINES   += COIN_COINID_SHORT=\"AVN\"
-DEFINES   += COIN_NATIVE_SEGWIT_PREFIX=\"raven\"
 DEFINES   += COIN_KIND=COIN_KIND_AVIAN
 DEFINES   += COIN_FLAGS=FLAG_SEGWIT_CHANGE_SUPPORT
 DEFINES   += COIN_FORKID=64
@@ -652,7 +651,7 @@ APPNAME ="Hydra"
 APP_LOAD_PARAMS += --path "44'/609'"
 else
 ifeq ($(filter clean,$(MAKECMDGOALS)),)
-$(error Unsupported COIN - use bitcoin_testnet, bitcoin, bitcoin_cash, bitcoin_gold, litecoin, dogecoin, dash, zcash, horizen, komodo, stratis, peercoin, pivx, viacoin, vertcoin, stealth, digibyte, qtum, bitcoin_private, firo, gamecredits, zclassic, xsn, nix, lbry, resistance, ravencoin, hydra, hydra_testnet, xrhodium)
+$(error Unsupported COIN - use bitcoin_testnet, bitcoin, bitcoin_cash, bitcoin_gold, litecoin, dogecoin, dash, zcash, horizen, komodo, stratis, peercoin, pivx, viacoin, vertcoin, stealth, digibyte, qtum, bitcoin_private, firo, gamecredits, zclassic, xsn, nix, lbry, resistance, ravencoin, avian, hydra, hydra_testnet, xrhodium)
 endif
 endif
 
@@ -784,10 +783,10 @@ dep/%.d: %.c Makefile
 # Temporary restriction until we a Resistance Nano X icon
 ifeq ($(TARGET_NAME),TARGET_NANOS)
 listvariants:
-	@echo VARIANTS COIN bitcoin_testnet bitcoin bitcoin_cash bitcoin_gold litecoin dogecoin dash zcash horizen komodo stratis peercoin pivx viacoin vertcoin stealth digibyte qtum bitcoin_private firo gamecredits zclassic xsn nix lbry ravencoin resistance hydra hydra_testnet xrhodium
+	@echo VARIANTS COIN bitcoin_testnet bitcoin bitcoin_cash bitcoin_gold litecoin dogecoin dash zcash horizen komodo stratis peercoin pivx viacoin vertcoin stealth digibyte qtum bitcoin_private firo gamecredits zclassic xsn nix lbry ravencoin avian resistance hydra hydra_testnet xrhodium
 else
 listvariants:
-	@echo VARIANTS COIN bitcoin_testnet bitcoin bitcoin_cash bitcoin_gold litecoin dogecoin dash zcash horizen komodo stratis peercoin pivx viacoin vertcoin stealth digibyte qtum bitcoin_private firo gamecredits zclassic xsn nix lbry ravencoin hydra hydra_testnet xrhodium
+	@echo VARIANTS COIN bitcoin_testnet bitcoin bitcoin_cash bitcoin_gold litecoin dogecoin dash zcash horizen komodo stratis peercoin pivx viacoin vertcoin stealth digibyte qtum bitcoin_private firo gamecredits zclassic xsn nix lbry ravencoin avian hydra hydra_testnet xrhodium
 endif
 
 
